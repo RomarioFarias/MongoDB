@@ -1,17 +1,17 @@
 mongo Spring Boot CRUD demo is demonstrating how to implement simple CRUD operations with a Cliente entity.
 
 
-What have inside:
+- What have inside:
 This project is based on the Spring Boot project and uses these bundled technologies:
 
 
-#Maven
-#Spring boot
-#Spring Core
-#Spring Data (Hibernate & MongoDb)
-#Spring MVC (Tomcat)
-#JDK 11
-#Junit
+.Maven
+.Spring boot
+.Spring Core
+.Spring Data (Hibernate & MongoDb)
+.Spring MVC (Tomcat)
+.JDK 11
+.Junit
 
 
 Installation
