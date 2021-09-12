@@ -5,13 +5,13 @@ What have inside:
 This project is based on the Spring Boot project and uses these bundled technologies:
 
 
-Maven
-Spring boot
-Spring Core
-Spring Data (Hibernate & MongoDb)
-Spring MVC (Tomcat)
-JDK 11
-Junit
+#Maven
+#Spring boot
+#Spring Core
+#Spring Data (Hibernate & MongoDb)
+#Spring MVC (Tomcat)
+#JDK 11
+#Junit
 
 
 Installation
@@ -37,7 +37,7 @@ mvn spring-boot:run
 $ mvn test
 
 
-#Database configuration
+# Database configuration
 Create a MongoDB database with the name springbootdb and add the credentials to /resources/application.properties.
 The default ones are :
 
