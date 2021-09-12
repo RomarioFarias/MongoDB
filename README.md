@@ -14,7 +14,7 @@ This project is based on the Spring Boot project and uses these bundled technolo
 
 ## Instalação
 # Run the project through the IDE and head out to http://localhost:8080
-
+```shell
 
 # The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies
 
@@ -33,7 +33,7 @@ mvn spring-boot:run
 
 # Para rodar os testes
 $ mvn test
-
+```
 
 # Database configuration
 Create a MongoDB database with the name springbootdb and add the credentials to /resources/application.properties.
