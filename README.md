@@ -12,7 +12,7 @@ This project is based on the Spring Boot project and uses these bundled technolo
 - Junit
 
 
-$ Installation
+## Instalação
 # Run the project through the IDE and head out to http://localhost:8080
 
 
