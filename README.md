@@ -1,7 +1,7 @@
  # Mongo
  Spring Boot CRUD mongo is demonstrating how to implement simple CRUD operations with a Cliente entity using the mongodb database.
 
-- What have inside:
+<p>What have inside:</p>
 This project is based on the Spring Boot project and uses these bundled technologies:
 
 - Maven
