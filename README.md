@@ -41,6 +41,9 @@ The default ones are :
 - spring.data.mongodb.database=users-db
 - spring.data.mongodb.username=root
 - spring.data.mongodb.password=root
+- 
+## Postman
+Clique [**aqui**](./postman/Mongo.postman_collection.json) para acessar o aquivo `json` da coleção do postman.
 
 # Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
