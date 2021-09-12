@@ -28,7 +28,7 @@ mvn install -DskipTests
 mvn spring-boot:run
 
 ## Para rodar os testes
-$ mvn test
+mvn test
 ```
 
 ## Database configuration
