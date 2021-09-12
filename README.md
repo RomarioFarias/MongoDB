@@ -1,7 +1,9 @@
 mongo Spring Boot CRUD demo is demonstrating how to implement simple CRUD operations with a Cliente entity.
 
-What have inside
+
+What have inside:
 This project is based on the Spring Boot project and uses these bundled technologies:
+
 
 Maven
 Spring boot
@@ -11,25 +13,34 @@ Spring MVC (Tomcat)
 JDK 11
 Junit
 
+
 Installation
 # Run the project through the IDE and head out to http://localhost:8080
 
+
 # The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies
+
 
 # Clone the repository and access the directory..
 HTTPS: git clone https://github.com/RomarioFarias/MongoDB.git
+
+
 # Download dependencies (the -DskipTests parameter skips the tests)
 mvn install -DskipTests
+
 
 # Run the application
 mvn spring-boot:run
 
+
 # Para rodar os testes
 $ mvn test
 
-Database configuration
+
+#Database configuration
 Create a MongoDB database with the name springbootdb and add the credentials to /resources/application.properties.
 The default ones are :
+
 
 spring.data.mongodb.host=localhost
 spring.data.mongodb.port=27017
