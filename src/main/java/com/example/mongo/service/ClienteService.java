@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
@@ -16,7 +17,7 @@ public class ClienteService {
     ClienteRepository clienteRepository;
 
 
-    public List<Cliente> listAllCliente() {
+    public List<Cliente> listarTodosClientes() {
         return clienteRepository.findAll();
     }
 
@@ -24,18 +25,24 @@ public class ClienteService {
         return this.devolveListaPaginadas(filtro, pageable);
     }
 
-    public Page<Cliente> devolveListaPaginadas(String filtro, Pageable pageable) {
+    private Page<Cliente> devolveListaPaginadas(String filtro, Pageable pageable) {
         if (filtro != null && !filtro.isEmpty()) {
             return clienteRepository.findByNome(filtro, pageable);
         }
         return clienteRepository.findAll(pageable);
     }
 
+    @Transactional
     public Cliente atualizarCliente(Cliente cliente) {
         return clienteRepository.save(cliente);
     }
 
     public Cliente cadastrarCliente(Cliente cliente) {
         return clienteRepository.save(cliente);
+    }
+
+    @Transactional
+    public void deletarCliente(Long id) {
+        this.clienteRepository.deleteById(id);
     }
 }

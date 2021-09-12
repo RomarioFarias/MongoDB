@@ -1,4 +1,4 @@
-package com.example.mongo.configuration;
+package com.example.mongo.converter;
 
 import com.example.mongo.dto.ClienteDto;
 import com.example.mongo.entity.Cliente;
@@ -13,14 +13,14 @@ import java.util.stream.Collectors;
 @Component
 @RequiredArgsConstructor
 public class ClienteMapper {
-    private final ModelMapper clienteMapper;
+    private final ModelMapper mapCliente;
 
     public Cliente toCliente(ClienteDto clienteDto) {
-        return this.clienteMapper.map(clienteDto, Cliente.class);
+        return this.mapCliente.map(clienteDto, Cliente.class);
     }
 
     public ClienteDto toClienteDto(Cliente cliente) {
-        return this.clienteMapper.map(cliente, ClienteDto.class);
+        return this.mapCliente.map(cliente, ClienteDto.class);
     }
 
     public List<Cliente> toClientes(List<ClienteDto> listClienteDto) {
