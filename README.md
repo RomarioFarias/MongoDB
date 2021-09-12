@@ -1,4 +1,5 @@
-. mongo Spring Boot CRUD demo is demonstrating how to implement simple CRUD operations with a Cliente entity.
+ #Mongo
+ Spring Boot CRUD mongo is demonstrating how to implement simple CRUD operations with a Cliente entity using the mongodb database.
 
 - What have inside:
 This project is based on the Spring Boot project and uses these bundled technologies:
@@ -13,23 +14,19 @@ This project is based on the Spring Boot project and uses these bundled technolo
 
 
 ## Instalação
-# Run the project through the IDE and head out to http://localhost:8080
+Run the project through the IDE and head out to http://localhost:8080
 ```shell
 
 # The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies
 
-
 # Clone the repository and access the directory..
 HTTPS: git clone https://github.com/RomarioFarias/MongoDB.git
-
 
 # Download dependencies (the -DskipTests parameter skips the tests)
 mvn install -DskipTests
 
-
 # Run the application
 mvn spring-boot:run
-
 
 # Para rodar os testes
 $ mvn test
